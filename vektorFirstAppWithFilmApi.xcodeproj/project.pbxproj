@@ -13,9 +13,11 @@
 		3733247C24129B8F00770CB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3733247A24129B8F00770CB6 /* Main.storyboard */; };
 		3733247E24129B9000770CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3733247D24129B9000770CB6 /* Assets.xcassets */; };
 		3733248124129B9000770CB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3733247F24129B9000770CB6 /* LaunchScreen.storyboard */; };
+		DE13FDA5C5651524F8274691 /* Pods_vektorFirstAppWithFilmApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A3E2ECF03A661AA96D1613 /* Pods_vektorFirstAppWithFilmApi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2670F8754267D3024F2B7048 /* Pods-vektorFirstAppWithFilmApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vektorFirstAppWithFilmApi.release.xcconfig"; path = "Target Support Files/Pods-vektorFirstAppWithFilmApi/Pods-vektorFirstAppWithFilmApi.release.xcconfig"; sourceTree = "<group>"; };
 		3733247124129B8F00770CB6 /* vektorFirstAppWithFilmApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vektorFirstAppWithFilmApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3733247424129B8F00770CB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3733247624129B8F00770CB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		3733247D24129B9000770CB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3733248024129B9000770CB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3733248224129B9000770CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C92A5A539D1BC520E7A5C8AB /* Pods-vektorFirstAppWithFilmApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vektorFirstAppWithFilmApi.debug.xcconfig"; path = "Target Support Files/Pods-vektorFirstAppWithFilmApi/Pods-vektorFirstAppWithFilmApi.debug.xcconfig"; sourceTree = "<group>"; };
+		F2A3E2ECF03A661AA96D1613 /* Pods_vektorFirstAppWithFilmApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vektorFirstAppWithFilmApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE13FDA5C5651524F8274691 /* Pods_vektorFirstAppWithFilmApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00C7DE73F95038C4846F5E58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C92A5A539D1BC520E7A5C8AB /* Pods-vektorFirstAppWithFilmApi.debug.xcconfig */,
+				2670F8754267D3024F2B7048 /* Pods-vektorFirstAppWithFilmApi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3733246824129B8F00770CB6 = {
 			isa = PBXGroup;
 			children = (
 				3733247324129B8F00770CB6 /* vektorFirstAppWithFilmApi */,
 				3733247224129B8F00770CB6 /* Products */,
+				00C7DE73F95038C4846F5E58 /* Pods */,
+				F470D048678A97749663B4E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = vektorFirstAppWithFilmApi;
 			sourceTree = "<group>";
 		};
+		F470D048678A97749663B4E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2A3E2ECF03A661AA96D1613 /* Pods_vektorFirstAppWithFilmApi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3733248524129B9000770CB6 /* Build configuration list for PBXNativeTarget "vektorFirstAppWithFilmApi" */;
 			buildPhases = (
+				82AA02EA72323A5E50A5FBE7 /* [CP] Check Pods Manifest.lock */,
 				3733246D24129B8F00770CB6 /* Sources */,
 				3733246E24129B8F00770CB6 /* Frameworks */,
 				3733246F24129B8F00770CB6 /* Resources */,
+				6148A664EAF6E6116641020A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6148A664EAF6E6116641020A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vektorFirstAppWithFilmApi/Pods-vektorFirstAppWithFilmApi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vektorFirstAppWithFilmApi/Pods-vektorFirstAppWithFilmApi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vektorFirstAppWithFilmApi/Pods-vektorFirstAppWithFilmApi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82AA02EA72323A5E50A5FBE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vektorFirstAppWithFilmApi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3733246D24129B8F00770CB6 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		3733248624129B9000770CB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92A5A539D1BC520E7A5C8AB /* Pods-vektorFirstAppWithFilmApi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		3733248724129B9000770CB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2670F8754267D3024F2B7048 /* Pods-vektorFirstAppWithFilmApi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
