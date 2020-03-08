@@ -13,7 +13,7 @@ import SwiftyJSON
 class ViewController: UIViewController ,UITableViewDelegate ,UITableViewDataSource {
     
     
-    let URL = "https://api.themoviedb.org/3/movie/222/lists?api_key=a8f2b271830886713bf596803001885a&page=1"
+    let URL = "https://api.themoviedb.org/3/movie/100/lists?api_key=a8f2b271830886713bf596803001885a&page=1"
     var tableData = [String]()
     
     
